@@ -1,0 +1,45 @@
+[
+  {
+    "request": {
+      "body": "",
+      "headers": {
+        "X-MBX-APIKEY": "***"
+      },
+      "method": "get",
+      "options": [],
+      "request_body": "",
+      "url": "https://api.binance.com/sapi/v1/margin/account?recvWindow=5000&timestamp=1612357233785&signature=***"
+    },
+    "response": {
+      "binary": false,
+      "body": "{\"tradeEnabled\":true,\"transferEnabled\":true,\"borrowEnabled\":true,\"marginLevel\":\"999\",\"totalAssetOfBtc\":\"0.00004118\",\"totalLiabilityOfBtc\":\"0\",\"totalNetAssetOfBtc\":\"0.00004118\",\"userAssets\":[{\"asset\":\"MATIC\",\"free\":\"0\",\"locked\":\"0\",\"borrowed\":\"0\",\"interest\":\"0\",\"netAsset\":\"0\"},{\"asset\":\"VET\",\"free\":\"0\",\"locked\":\"0\",\"borrowed\":\"0\",\"interest\":\"0\",\"netAsset\":\"0\"},{\"asset\":\"DOGE\",\"free\":\"0\",\"locked\":\"0\",\"borrowed\":\"0\",\"interest\":\"0\",\"netAsset\":\"0\"},{\"asset\":\"USDT\",\"free\":\"0\",\"locked\":\"0\",\"borrowed\":\"0\",\"interest\":\"0\",\"netAsset\":\"0\"},{\"asset\":\"RVN\",\"free\":\"0\",\"locked\":\"0\",\"borrowed\":\"0\",\"interest\":\"0\",\"netAsset\":\"0\"},{\"asset\":\"NEAR\",\"free\":\"0\",\"locked\":\"0\",\"borrowed\":\"0\",\"interest\":\"0\",\"netAsset\":\"0\"},{\"asset\":\"DASH\",\"free\":\"0\",\"locked\":\"0\",\"borrowed\":\"0\",\"interest\":\"0\",\"netAsset\":\"0\"},{\"asset\":\"COMP\",\"free\":\"0\",\"locked\":\"0\",\"borrowed\":\"0\",\"interest\":\"0\",\"netAsset\":\"0\"},{\"asset\":\"WAVES\",\"free\":\"0\",\"locked\":\"0\",\"borrowed\":\"0\",\"interest\":\"0\",\"netAsset\":\"0\"},{\"asset\":\"XRP\",\"free\":\"0\",\"locked\":\"0\",\"borrowed\":\"0\",\"interest\":\"0\",\"netAsset\":\"0\"},{\"asset\":\"TRX\",\"free\":\"0\",\"locked\":\"0\",\"borrowed\":\"0\",\"interest\":\"0\",\"netAsset\":\"0\"},{\"asset\":\"EUR\",\"free\":\"0\",\"locked\":\"0\",\"borrowed\":\"0\",\"interest\":\"0\",\"netAsset\":\"0\"},{\"asset\":\"IOST\",\"free\":\"0\",\"locked\":\"0\",\"borrowed\":\"0\",\"interest\":\"0\",\"netAsset\":\"0\"},{\"asset\":\"BCH\",\"free\":\"0\",\"locked\":\"0\",\"borrowed\":\"0\",\"interest\":\"0\",\"netAsset\":\"0\"},{\"asset\":\"OMG\",\"free\":\"0\",\"locked\":\"0\",\"borrowed\":\"0\",\"interest\":\"0\",\"netAsset\":\"0\"},{\"asset\":\"DOT\",\"free\":\"0\",\"locked\":\"0\",\"borrowed\":\"0\",\"interest\":\"0\",\"netAsset\":\"0\"},{\"asset\":\"BTC\",\"free\":\"0\",\"locked\":\"0\",\"borrowed\":\"0\",\"interest\":\"0\",\"netAsset\":\"0\"},{\"asset\":\"IOTA\",\"free\":\"0\",\"locked\":\"0\",\"borrowed\":\"0\",\"interest\":\"0\",\"netAsset\":\"0\"},{\"asset\":\"USDC\",\"free\":\"0\",\"locked\":\"0\",\"borrowed\":\"0\",\"interest\":\"0\",\"netAsset\":\"0\"},{\"asset\":\"LTC\",\"free\":\"0\",\"locked\":\"0\",\"borrowed\":\"0\",\"interest\":\"0\",\"netAsset\":\"0\"},{\"asset\":\"THETA\",\"free\":\"0\",\"locked\":\"0\",\"borrowed\":\"0\",\"interest\":\"0\",\"netAsset\":\"0\"},{\"asset\":\"YFII\",\"free\":\"0\",\"locked\":\"0\",\"borrowed\":\"0\",\"interest\":\"0\",\"netAsset\":\"0\"},{\"asset\":\"CRV\",\"free\":\"0\",\"locked\":\"0\",\"borrowed\":\"0\",\"interest\":\"0\",\"netAsset\":\"0\"},{\"asset\":\"GRT\",\"free\":\"0\",\"locked\":\"0\",\"borrowed\":\"0\",\"interest\":\"0\",\"netAsset\":\"0\"},{\"asset\":\"SUSHI\",\"free\":\"0\",\"locked\":\"0\",\"borrowed\":\"0\",\"interest\":\"0\",\"netAsset\":\"0\"},{\"asset\":\"ALGO\",\"free\":\"0\",\"locked\":\"0\",\"borrowed\":\"0\",\"interest\":\"0\",\"netAsset\":\"0\"},{\"asset\":\"ATOM\",\"free\":\"0\",\"locked\":\"0\",\"borrowed\":\"0\",\"interest\":\"0\",\"netAsset\":\"0\"},{\"asset\":\"UNI\",\"free\":\"0\",\"locked\":\"0\",\"borrowed\":\"0\",\"interest\":\"0\",\"netAsset\":\"0\"},{\"asset\":\"AAVE\",\"free\":\"0\",\"locked\":\"0\",\"borrowed\":\"0\",\"interest\":\"0\",\"netAsset\":\"0\"},{\"asset\":\"ONT\",\"free\":\"0\",\"locked\":\"0\",\"borrowed\":\"0\",\"interest\":\"0\",\"netAsset\":\"0\"},{\"asset\":\"GBP\",\"free\":\"0\",\"locked\":\"0\",\"borrowed\":\"0\",\"interest\":\"0\",\"netAsset\":\"0\"},{\"asset\":\"XLM\",\"free\":\"0\",\"locked\":\"0\",\"borrowed\":\"0\",\"interest\":\"0\",\"netAsset\":\"0\"},{\"asset\":\"LINK\",\"free\":\"0\",\"locked\":\"0\",\"borrowed\":\"0\",\"interest\":\"0\",\"netAsset\":\"0\"},{\"asset\":\"SNX\",\"free\":\"0\",\"locked\":\"0\",\"borrowed\":\"0\",\"interest\":\"0\",\"netAsset\":\"0\"},{\"asset\":\"YFI\",\"free\":\"0\",\"locked\":\"0\",\"borrowed\":\"0\",\"interest\":\"0\",\"netAsset\":\"0\"},{\"asset\":\"QTUM\",\"free\":\"0\",\"locked\":\"0\",\"borrowed\":\"0\",\"interest\":\"0\",\"netAsset\":\"0\"},{\"asset\":\"XTZ\",\"free\":\"0\",\"locked\":\"0\",\"borrowed\":\"0\",\"interest\":\"0\",\"netAsset\":\"0\"},{\"asset\":\"BCHA\",\"free\":\"0\",\"locked\":\"0\",\"borrowed\":\"0\",\"interest\":\"0\",\"netAsset\":\"0\"},{\"asset\":\"EOS\",\"free\":\"0\",\"locked\":\"0\",\"borrowed\":\"0\",\"interest\":\"0\",\"netAsset\":\"0\"},{\"asset\":\"FIL\",\"free\":\"0\",\"locked\":\"0\",\"borrowed\":\"0\",\"interest\":\"0\",\"netAsset\":\"0\"},{\"asset\":\"BAT\",\"free\":\"0\",\"locked\":\"0\",\"borrowed\":\"0\",\"interest\":\"0\",\"netAsset\":\"0\"},{\"asset\":\"ETC\",\"free\":\"0\",\"locked\":\"0\",\"borrowed\":\"0\",\"interest\":\"0\",\"netAsset\":\"0\"},{\"asset\":\"BNB\",\"free\":\"0\",\"locked\":\"0\",\"borrowed\":\"0\",\"interest\":\"0\",\"netAsset\":\"0\"},{\"asset\":\"ETH\",\"free\":\"0.000968\",\"locked\":\"0\",\"borrowed\":\"0\",\"interest\":\"0\",\"netAsset\":\"0.000968\"},{\"asset\":\"ZEC\",\"free\":\"0\",\"locked\":\"0\",\"borrowed\":\"0\",\"interest\":\"0\",\"netAsset\":\"0\"},{\"asset\":\"NEO\",\"free\":\"0\",\"locked\":\"0\",\"borrowed\":\"0\",\"interest\":\"0\",\"netAsset\":\"0\"},{\"asset\":\"BUSD\",\"free\":\"0\",\"locked\":\"0\",\"borrowed\":\"0\",\"interest\":\"0\",\"netAsset\":\"0\"},{\"asset\":\"ZIL\",\"free\":\"0\",\"locked\":\"0\",\"borrowed\":\"0\",\"interest\":\"0\",\"netAsset\":\"0\"},{\"asset\":\"XMR\",\"free\":\"0\",\"locked\":\"0\",\"borrowed\":\"0\",\"interest\":\"0\",\"netAsset\":\"0\"},{\"asset\":\"ADA\",\"free\":\"0\",\"locked\":\"0\",\"borrowed\":\"0\",\"interest\":\"0\",\"netAsset\":\"0\"}]}",
+      "headers": {
+        "Content-Type": "application/json;charset=UTF-8",
+        "Content-Length": "4479",
+        "Connection": "keep-alive",
+        "Date": "Wed, 03 Feb 2021 13:00:34 GMT",
+        "Server": "nginx",
+        "Vary": "Accept-Encoding",
+        "X-SAPI-USED-IP-WEIGHT-1M": "10",
+        "Strict-Transport-Security": "max-age=31536000; includeSubdomains",
+        "X-Frame-Options": "SAMEORIGIN",
+        "X-Xss-Protection": "1; mode=block",
+        "X-Content-Type-Options": "nosniff",
+        "Content-Security-Policy": "default-src 'self'",
+        "X-Content-Security-Policy": "default-src 'self'",
+        "X-WebKit-CSP": "default-src 'self'",
+        "Cache-Control": "no-cache, no-store, must-revalidate",
+        "Pragma": "no-cache",
+        "Expires": "0",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET, HEAD, OPTIONS",
+        "X-Cache": "Miss from cloudfront",
+        "Via": "1.1 8eb3faf3f05da0ac024b118287e8d2bd.cloudfront.net (CloudFront)",
+        "X-Amz-Cf-Pop": "SYD1-C2",
+        "X-Amz-Cf-Id": "PllNsQ0ecHF4_j7q6Eg-QlEpr51rsB3lYoxantHaQqouF8ga0N65QQ=="
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  }
+]

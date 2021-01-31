@@ -569,6 +569,32 @@ defmodule Binance do
     end
   end
 
+  def get_all_margin_assets() do
+    api_key = Application.get_env(:binance, :api_key)
+    secret_key = Application.get_env(:binance, :secret_key)
+
+    case HTTPClient.get_binance("/sapi/v1/margin/allAssets", %{}, secret_key, api_key) do
+      {:ok, data} ->
+        data =
+          data
+          |> Enum.map(&(Binance.MarginAsset.new(&1)))
+
+        {:ok, data}
+      err -> err
+    end
+  end
+
+  def get_margin_account() do
+    api_key = Application.get_env(:binance, :api_key)
+    secret_key = Application.get_env(:binance, :secret_key)
+
+    case HTTPClient.get_binance("/sapi/v1/margin/account", %{}, secret_key, api_key) do
+      {:ok, data} ->
+        {:ok, Binance.MarginAccount.new(data)}
+      err -> err
+    end
+  end
+
   defp cancel_order_(
          symbol,
          timestamp,
@@ -609,4 +635,6 @@ defmodule Binance do
       err -> err
     end
   end
+
+
 end

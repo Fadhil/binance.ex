@@ -1,0 +1,45 @@
+[
+  {
+    "request": {
+      "body": "",
+      "headers": {
+        "X-MBX-APIKEY": "***"
+      },
+      "method": "get",
+      "options": [],
+      "request_body": "",
+      "url": "https://api.binance.com/sapi/v1/margin/allAssets?recvWindow=5000&timestamp=1612193337044&signature=***"
+    },
+    "response": {
+      "binary": false,
+      "body": "[{\"assetName\":\"BTC\",\"assetFullName\":\"Bitcoin\",\"isBorrowable\":true,\"isMortgageable\":true,\"userMinBorrow\":\"0\",\"userMinRepay\":\"0\"},{\"assetName\":\"ETH\",\"assetFullName\":\"Etherum\",\"isBorrowable\":true,\"isMortgageable\":true,\"userMinBorrow\":\"0\",\"userMinRepay\":\"0\"},{\"assetName\":\"XRP\",\"assetFullName\":\"Ripple\",\"isBorrowable\":true,\"isMortgageable\":true,\"userMinBorrow\":\"0\",\"userMinRepay\":\"0\"},{\"assetName\":\"BNB\",\"assetFullName\":\"Binance Coin\",\"isBorrowable\":true,\"isMortgageable\":true,\"userMinBorrow\":\"0\",\"userMinRepay\":\"0\"},{\"assetName\":\"TRX\",\"assetFullName\":\"TRON\",\"isBorrowable\":true,\"isMortgageable\":true,\"userMinBorrow\":\"0\",\"userMinRepay\":\"0\"},{\"assetName\":\"USDT\",\"assetFullName\":\"Tether\",\"isBorrowable\":true,\"isMortgageable\":true,\"userMinBorrow\":\"0\",\"userMinRepay\":\"0\"},{\"assetName\":\"LINK\",\"assetFullName\":\"ChainLink\",\"isBorrowable\":true,\"isMortgageable\":true,\"userMinBorrow\":\"0\",\"userMinRepay\":\"0\"},{\"assetName\":\"EOS\",\"assetFullName\":\"EOS\",\"isBorrowable\":true,\"isMortgageable\":true,\"userMinBorrow\":\"0\",\"userMinRepay\":\"0\"},{\"assetName\":\"ADA\",\"assetFullName\":\"Cardano\",\"isBorrowable\":true,\"isMortgageable\":true,\"userMinBorrow\":\"0\",\"userMinRepay\":\"0\"},{\"assetName\":\"ONT\",\"assetFullName\":\"Ontology\",\"isBorrowable\":true,\"isMortgageable\":true,\"userMinBorrow\":\"0\",\"userMinRepay\":\"0\"},{\"assetName\":\"USDC\",\"assetFullName\":\"USD Coin\",\"isBorrowable\":true,\"isMortgageable\":true,\"userMinBorrow\":\"0\",\"userMinRepay\":\"0\"},{\"assetName\":\"ETC\",\"assetFullName\":\"Ethereum Classic\",\"isBorrowable\":true,\"isMortgageable\":true,\"userMinBorrow\":\"0\",\"userMinRepay\":\"0\"},{\"assetName\":\"LTC\",\"assetFullName\":\"Litecoin\",\"isBorrowable\":true,\"isMortgageable\":true,\"userMinBorrow\":\"0\",\"userMinRepay\":\"0\"},{\"assetName\":\"XLM\",\"assetFullName\":\"Stellar Lumens\",\"isBorrowable\":true,\"isMortgageable\":true,\"userMinBorrow\":\"0\",\"userMinRepay\":\"0\"},{\"assetName\":\"XMR\",\"assetFullName\":\"Monero\",\"isBorrowable\":true,\"isMortgageable\":true,\"userMinBorrow\":\"0\",\"userMinRepay\":\"0\"},{\"assetName\":\"NEO\",\"assetFullName\":\"NEO\",\"isBorrowable\":true,\"isMortgageable\":true,\"userMinBorrow\":\"0\",\"userMinRepay\":\"0\"},{\"assetName\":\"ATOM\",\"assetFullName\":\"Cosmos\",\"isBorrowable\":true,\"isMortgageable\":true,\"userMinBorrow\":\"0\",\"userMinRepay\":\"0\"},{\"assetName\":\"DASH\",\"assetFullName\":\"Dash\",\"isBorrowable\":true,\"isMortgageable\":true,\"userMinBorrow\":\"0\",\"userMinRepay\":\"0\"},{\"assetName\":\"ZEC\",\"assetFullName\":\"Zcash\",\"isBorrowable\":true,\"isMortgageable\":true,\"userMinBorrow\":\"0\",\"userMinRepay\":\"0\"},{\"assetName\":\"MATIC\",\"assetFullName\":\"MATIC Network\",\"isBorrowable\":false,\"isMortgageable\":false,\"userMinBorrow\":\"0\",\"userMinRepay\":\"0\"},{\"assetName\":\"BUSD\",\"assetFullName\":\"BUSD\",\"isBorrowable\":true,\"isMortgageable\":true,\"userMinBorrow\":\"0\",\"userMinRepay\":\"0\"},{\"assetName\":\"BAT\",\"assetFullName\":\"Basic Attention Token\",\"isBorrowable\":true,\"isMortgageable\":true,\"userMinBorrow\":\"0\",\"userMinRepay\":\"0\"},{\"assetName\":\"IOST\",\"assetFullName\":\"IOST\",\"isBorrowable\":true,\"isMortgageable\":true,\"userMinBorrow\":\"0\",\"userMinRepay\":\"0\"},{\"assetName\":\"VET\",\"assetFullName\":\"VeChain\",\"isBorrowable\":true,\"isMortgageable\":true,\"userMinBorrow\":\"0\",\"userMinRepay\":\"0\"},{\"assetName\":\"QTUM\",\"assetFullName\":\"Qtum\",\"isBorrowable\":true,\"isMortgageable\":true,\"userMinBorrow\":\"0\",\"userMinRepay\":\"0\"},{\"assetName\":\"IOTA\",\"assetFullName\":\"MIOTA\",\"isBorrowable\":true,\"isMortgageable\":true,\"userMinBorrow\":\"0\",\"userMinRepay\":\"0\"},{\"assetName\":\"XTZ\",\"assetFullName\":\"Tezos\",\"isBorrowable\":true,\"isMortgageable\":true,\"userMinBorrow\":\"0\",\"userMinRepay\":\"0\"},{\"assetName\":\"BCH\",\"assetFullName\":\"Bitcoin Cash\",\"isBorrowable\":true,\"isMortgageable\":true,\"userMinBorrow\":\"0\",\"userMinRepay\":\"0\"},{\"assetName\":\"RVN\",\"assetFullName\":\"Ravencoin\",\"isBorrowable\":false,\"isMortgageable\":false,\"userMinBorrow\":\"0\",\"userMinRepay\":\"0\"},{\"assetName\":\"ZIL\",\"assetFullName\":\"Zilliqa\",\"isBorrowable\":true,\"isMortgageable\":true,\"userMinBorrow\":\"0\",\"userMinRepay\":\"0\"},{\"assetName\":\"DOT\",\"assetFullName\":\"Polkadot\",\"isBorrowable\":true,\"isMortgageable\":true,\"userMinBorrow\":\"0\",\"userMinRepay\":\"0\"},{\"assetName\":\"ALGO\",\"assetFullName\":\"Algorand\",\"isBorrowable\":true,\"isMortgageable\":true,\"userMinBorrow\":\"0\",\"userMinRepay\":\"0\"},{\"assetName\":\"THETA\",\"assetFullName\":\"Theta Token\",\"isBorrowable\":true,\"isMortgageable\":true,\"userMinBorrow\":\"0\",\"userMinRepay\":\"0\"},{\"assetName\":\"COMP\",\"assetFullName\":\"Compound\",\"isBorrowable\":true,\"isMortgageable\":true,\"userMinBorrow\":\"0\",\"userMinRepay\":\"0\"},{\"assetName\":\"OMG\",\"assetFullName\":\"OmiseGO\",\"isBorrowable\":true,\"isMortgageable\":true,\"userMinBorrow\":\"0\",\"userMinRepay\":\"0\"},{\"assetName\":\"DOGE\",\"assetFullName\":\"Dogecoin\",\"isBorrowable\":true,\"isMortgageable\":false,\"userMinBorrow\":\"0\",\"userMinRepay\":\"0\"},{\"assetName\":\"WAVES\",\"assetFullName\":\"WAVES\",\"isBorrowable\":true,\"isMortgageable\":true,\"userMinBorrow\":\"0\",\"userMinRepay\":\"0\"},{\"assetName\":\"SNX\",\"assetFullName\":\"Synthetix Network Token\",\"isBorrowable\":true,\"isMortgageable\":false,\"userMinBorrow\":\"0\",\"userMinRepay\":\"0.0001\"},{\"assetName\":\"YFI\",\"assetFullName\":\"yearn.finance\",\"isBorrowable\":true,\"isMortgageable\":true,\"userMinBorrow\":\"0\",\"userMinRepay\":\"0\"},{\"assetName\":\"CRV\",\"assetFullName\":\"Curve\",\"isBorrowable\":true,\"isMortgageable\":true,\"userMinBorrow\":\"0\",\"userMinRepay\":\"0\"},{\"assetName\":\"SUSHI\",\"assetFullName\":\"Sushi\",\"isBorrowable\":true,\"isMortgageable\":true,\"userMinBorrow\":\"0\",\"userMinRepay\":\"0\"},{\"assetName\":\"UNI\",\"assetFullName\":\"Uniswap\",\"isBorrowable\":true,\"isMortgageable\":true,\"userMinBorrow\":\"0\",\"userMinRepay\":\"0\"},{\"assetName\":\"YFII\",\"assetFullName\":\"DFI.Money\",\"isBorrowable\":true,\"isMortgageable\":true,\"userMinBorrow\":\"0\",\"userMinRepay\":\"0\"},{\"assetName\":\"NEAR\",\"assetFullName\":\"NEAR\",\"isBorrowable\":true,\"isMortgageable\":true,\"userMinBorrow\":\"0\",\"userMinRepay\":\"0\"},{\"assetName\":\"FIL\",\"assetFullName\":\"filecoin\",\"isBorrowable\":true,\"isMortgageable\":true,\"userMinBorrow\":\"0\",\"userMinRepay\":\"0\"},{\"assetName\":\"AAVE\",\"assetFullName\":\"Aave\",\"isBorrowable\":true,\"isMortgageable\":true,\"userMinBorrow\":\"0\",\"userMinRepay\":\"0\"},{\"assetName\":\"BCHA\",\"assetFullName\":\"BCHA\",\"isBorrowable\":false,\"isMortgageable\":false,\"userMinBorrow\":\"0\",\"userMinRepay\":\"0\"},{\"assetName\":\"EUR\",\"assetFullName\":\"Euro\",\"isBorrowable\":true,\"isMortgageable\":true,\"userMinBorrow\":\"0\",\"userMinRepay\":\"0\"},{\"assetName\":\"GBP\",\"assetFullName\":\"GBP\",\"isBorrowable\":true,\"isMortgageable\":true,\"userMinBorrow\":\"0\",\"userMinRepay\":\"0\"},{\"assetName\":\"GRT\",\"assetFullName\":\"GRT\",\"isBorrowable\":true,\"isMortgageable\":true,\"userMinBorrow\":\"0\",\"userMinRepay\":\"0\"}]",
+      "headers": {
+        "Content-Type": "application/json;charset=UTF-8",
+        "Content-Length": "6415",
+        "Connection": "keep-alive",
+        "Date": "Mon, 01 Feb 2021 15:28:57 GMT",
+        "Server": "nginx",
+        "Vary": "Accept-Encoding",
+        "X-SAPI-USED-IP-WEIGHT-1M": "1",
+        "Strict-Transport-Security": "max-age=31536000; includeSubdomains",
+        "X-Frame-Options": "SAMEORIGIN",
+        "X-Xss-Protection": "1; mode=block",
+        "X-Content-Type-Options": "nosniff",
+        "Content-Security-Policy": "default-src 'self'",
+        "X-Content-Security-Policy": "default-src 'self'",
+        "X-WebKit-CSP": "default-src 'self'",
+        "Cache-Control": "no-cache, no-store, must-revalidate",
+        "Pragma": "no-cache",
+        "Expires": "0",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET, HEAD, OPTIONS",
+        "X-Cache": "Miss from cloudfront",
+        "Via": "1.1 483c7c88d4db2ecfd894042db6a4e9c9.cloudfront.net (CloudFront)",
+        "X-Amz-Cf-Pop": "SYD1-C2",
+        "X-Amz-Cf-Id": "PU3b8Ga51kuVLJQNGkrzu9Io0_WAtNsAJzPndt8DQL6SxC3skGTLZg=="
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  }
+]
