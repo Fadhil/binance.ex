@@ -17,7 +17,6 @@ defmodule Binance.MarginAccount do
   use ExConstructor
 
   def new(map_or_kwlist, opts \\ []) do
-    require IEx; IEx.pry()
     user_assets =
       map_or_kwlist
       |> Map.get("userAssets")

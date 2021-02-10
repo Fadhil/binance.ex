@@ -4,12 +4,12 @@ defmodule Binance.MarginAsset do
   """
 
   defstruct [
-    :asset_full_name,
-    :asset_name,
-    :is_borrowable,
-    :is_morgageable,
-    :user_min_borrow,
-    :user_min_repay
+    :asset,
+    :borrowed,
+    :free,
+    :interest,
+    :locked,
+    :net_asset
   ]
 
   use ExConstructor

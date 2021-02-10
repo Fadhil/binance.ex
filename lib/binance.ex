@@ -590,7 +590,8 @@ defmodule Binance do
 
     case HTTPClient.get_binance("/sapi/v1/margin/account", %{}, secret_key, api_key) do
       {:ok, data} ->
-        {:ok, Binance.MarginAccount.new(data)}
+        account = Binance.MarginAccount.new(data)
+        {:ok, account}
       err -> err
     end
   end

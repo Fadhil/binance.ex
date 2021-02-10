@@ -461,7 +461,8 @@ defmodule BinanceTest do
   describe ".get_margin_account" do
     test "returns all assets in margin account" do
       use_cassette "get_margin_account" do
-        assert {:ok, %Binance.MarginAccount{}} = Binance.get_margin_account()
+        assert {:ok, %Binance.MarginAccount{user_assets: [user_asset| _tail]}} = Binance.get_margin_account()
+        assert %Binance.MarginAsset{asset: _, borrowed: _, free: _, interest: _, locked: _, net_asset: _} = user_asset
       end
     end
   end
