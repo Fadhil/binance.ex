@@ -5,7 +5,8 @@ use Mix.Config
 config :binance,
   api_key: System.get_env("BINANCE_API_KEY"),
   secret_key: System.get_env("BINANCE_API_SECRET"),
-  end_point: "https://api.binance.com"
+  end_point: "https://api.binance.com",
+  futures_endpoint: "https://fapi.binance.com"
 
 config :exvcr,
   filter_request_headers: [

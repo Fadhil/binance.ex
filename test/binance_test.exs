@@ -434,7 +434,7 @@ defmodule BinanceTest do
         assert order.executed_qty == "0.00000000"
         assert order.iceberg_qty == nil
         assert order.is_working == nil
-        assert order.order_id == 212217782
+        assert order.order_id == 212_217_782
         assert order.orig_qty == "100.00000000"
         assert order.price == "0.30000000"
         assert order.side == "BUY"
@@ -453,7 +453,6 @@ defmodule BinanceTest do
     test "returns all margin assets available on Binance" do
       use_cassette "get_all_margin_assets" do
         assert {:ok, [%Binance.MarginAsset{} = asset1 | tail]} = Binance.get_all_margin_assets()
-
       end
     end
   end
@@ -461,8 +460,17 @@ defmodule BinanceTest do
   describe ".get_margin_account" do
     test "returns all assets in margin account" do
       use_cassette "get_margin_account" do
-        assert {:ok, %Binance.MarginAccount{user_assets: [user_asset| _tail]}} = Binance.get_margin_account()
-        assert %Binance.MarginAsset{asset: _, borrowed: _, free: _, interest: _, locked: _, net_asset: _} = user_asset
+        assert {:ok, %Binance.MarginAccount{user_assets: [user_asset | _tail]}} =
+                 Binance.get_margin_account()
+
+        assert %Binance.MarginAsset{
+                 asset: _,
+                 borrowed: _,
+                 free: _,
+                 interest: _,
+                 locked: _,
+                 net_asset: _
+               } = user_asset
       end
     end
   end

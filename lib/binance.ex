@@ -577,10 +577,12 @@ defmodule Binance do
       {:ok, data} ->
         data =
           data
-          |> Enum.map(&(Binance.MarginAsset.new(&1)))
+          |> Enum.map(&Binance.MarginAsset.new(&1))
 
         {:ok, data}
-      err -> err
+
+      err ->
+        err
     end
   end
 
@@ -592,7 +594,9 @@ defmodule Binance do
       {:ok, data} ->
         account = Binance.MarginAccount.new(data)
         {:ok, account}
-      err -> err
+
+      err ->
+        err
     end
   end
 
@@ -636,6 +640,4 @@ defmodule Binance do
       err -> err
     end
   end
-
-
 end

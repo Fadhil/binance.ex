@@ -1,0 +1,46 @@
+[
+  {
+    "request": {
+      "body": "",
+      "headers": {
+        "X-MBX-APIKEY": "***"
+      },
+      "method": "get",
+      "options": [],
+      "request_body": "",
+      "url": "https://fapi.binance.com/fapi/v2/balance?recvWindow=5000&timestamp=1612967854263&signature=***"
+    },
+    "response": {
+      "binary": false,
+      "body": "[{\"accountAlias\":\"SguXsRfWSgSguX\",\"asset\":\"USDT\",\"balance\":\"48.42938667\",\"crossWalletBalance\":\"48.42938667\",\"crossUnPnl\":\"-0.01925900\",\"availableBalance\":\"25.67252062\",\"maxWithdrawAmount\":\"25.67252062\"},{\"accountAlias\":\"SguXsRfWSgSguX\",\"asset\":\"BNB\",\"balance\":\"0.00000000\",\"crossWalletBalance\":\"0.00000000\",\"crossUnPnl\":\"0.00000000\",\"availableBalance\":\"0.00000000\",\"maxWithdrawAmount\":\"0.00000000\"},{\"accountAlias\":\"SguXsRfWSgSguX\",\"asset\":\"BUSD\",\"balance\":\"0.00000000\",\"crossWalletBalance\":\"0.00000000\",\"crossUnPnl\":\"0.00000000\",\"availableBalance\":\"0.00000000\",\"maxWithdrawAmount\":\"0.00000000\"}]",
+      "headers": {
+        "Content-Type": "application/json",
+        "Content-Length": "596",
+        "Connection": "keep-alive",
+        "Date": "Wed, 10 Feb 2021 14:37:35 GMT",
+        "Server": "Tengine",
+        "Vary": "Accept-Encoding",
+        "X-MBX-USED-WEIGHT-1M": "1",
+        "x-response-time": "14ms",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
+        "Access-Control-Allow-Credentials": "true",
+        "Access-Control-Allow-Headers": "*,clienttype,Content-Type,lang,x-ui-request-trace,bnc-uuid",
+        "Content-Security-Policy": "default-src 'self'",
+        "cache-control": "no-cache, no-store, must-revalidate",
+        "expires": "0",
+        "pragma": "no-cache",
+        "strict-transport-security": "max-age=31536000; includeSubdomains",
+        "x-content-type-options": "nosniff",
+        "x-frame-options": "SAMEORIGIN",
+        "x-xss-protection": "1; mode=block",
+        "X-Cache": "Miss from cloudfront",
+        "Via": "1.1 bbcf77ea507d925a07ec0cee799872b2.cloudfront.net (CloudFront)",
+        "X-Amz-Cf-Pop": "SYD1-C2",
+        "X-Amz-Cf-Id": "usoE4JrCT6FbOGl-1CRIoyead7QAlU1k-YlPtc0UJcQE9r0B9To3_A=="
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  }
+]
