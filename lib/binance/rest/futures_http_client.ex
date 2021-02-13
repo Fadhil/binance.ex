@@ -41,8 +41,25 @@ defmodule Binance.Rest.FuturesHTTPClient do
             argument_string
           )
           |> Base.encode16()
-
         {:ok, "#{url}?#{argument_string}&signature=#{signature}", headers}
+    end
+  end
+
+  def post_futures(url, params) do
+    # generate signature
+    api_key = Application.get_env(:binance, :api_key)
+    secret_key = Application.get_env(:binance, :secret_key)
+    {:ok, url, headers} = prepare_request(url, params, secret_key, api_key)
+
+    case HTTPoison.post("#{@futures_endpoint}#{url}", [], headers) do
+      {:error, err} ->
+        {:error, {:http_error, err}}
+
+      {:ok, response} ->
+        case Poison.decode(response.body) do
+          {:ok, data} -> {:ok, data}
+          {:error, err} -> {:error, {:poison_decode_error, err}}
+        end
     end
   end
 

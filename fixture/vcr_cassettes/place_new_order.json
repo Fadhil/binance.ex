@@ -1,0 +1,47 @@
+[
+  {
+    "request": {
+      "body": "",
+      "headers": {
+        "X-MBX-APIKEY": "***"
+      },
+      "method": "post",
+      "options": [],
+      "request_body": "",
+      "url": "https://fapi.binance.com/fapi/v1/order?price=0.05188&quantity=100&recvWindow=5000&side=BUY&symbol=AKROUSDT&timeInForce=GTC&timestamp=1613222597167&type=LIMIT&signature=***"
+    },
+    "response": {
+      "binary": false,
+      "body": "{\"orderId\":56350580,\"symbol\":\"AKROUSDT\",\"status\":\"NEW\",\"clientOrderId\":\"5eBaYE9DY4OMQ1gvhVzGsg\",\"price\":\"0.05188\",\"avgPrice\":\"0.00000\",\"origQty\":\"100\",\"executedQty\":\"0\",\"cumQty\":\"0\",\"cumQuote\":\"0\",\"timeInForce\":\"GTC\",\"type\":\"LIMIT\",\"reduceOnly\":false,\"closePosition\":false,\"side\":\"BUY\",\"positionSide\":\"BOTH\",\"stopPrice\":\"0\",\"workingType\":\"CONTRACT_PRICE\",\"priceProtect\":false,\"origType\":\"LIMIT\",\"updateTime\":1613222598028}",
+      "headers": {
+        "Content-Type": "application/json",
+        "Content-Length": "422",
+        "Connection": "keep-alive",
+        "Date": "Sat, 13 Feb 2021 13:23:18 GMT",
+        "Server": "Tengine",
+        "Vary": "Accept-Encoding",
+        "X-MBX-USED-WEIGHT-1M": "0",
+        "X-MBX-ORDER-COUNT-1M": "1",
+        "x-response-time": "15ms",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
+        "Access-Control-Allow-Credentials": "true",
+        "Access-Control-Allow-Headers": "*,clienttype,Content-Type,lang,x-ui-request-trace,bnc-uuid",
+        "Content-Security-Policy": "default-src 'self'",
+        "cache-control": "no-cache, no-store, must-revalidate",
+        "expires": "0",
+        "pragma": "no-cache",
+        "strict-transport-security": "max-age=31536000; includeSubdomains",
+        "x-content-type-options": "nosniff",
+        "x-frame-options": "SAMEORIGIN",
+        "x-xss-protection": "1; mode=block",
+        "X-Cache": "Miss from cloudfront",
+        "Via": "1.1 b798288227eabcd45c0b7368df2cc344.cloudfront.net (CloudFront)",
+        "X-Amz-Cf-Pop": "SYD1-C1",
+        "X-Amz-Cf-Id": "0nc_6m18Vw5Zm7Ek0M608RZcXR2HUeSQ0TtIk_UCj4GEYcN2vAsR7w=="
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  }
+]

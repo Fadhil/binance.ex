@@ -2,7 +2,7 @@ defmodule Binance.Futures.AccountTest do
   use ExUnit.Case
   use ExVCR.Mock, adapter: ExVCR.Adapter.Hackney
 
-  doctest Binance.Futures
+  doctest Binance.Futures.Account
 
   describe ".get_account" do
     test "returns balances in futures account" do
