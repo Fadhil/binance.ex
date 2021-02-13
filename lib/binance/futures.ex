@@ -15,6 +15,21 @@ defmodule Binance.Futures do
     end
   end
 
+  def get_balance(symbol) do
+    {:ok, account} = get_account()
+
+    asset =
+      account.assets
+      |> Enum.filter(&(&1.asset == symbol))
+
+    case asset do
+      [asset] ->
+        {:ok, asset}
+      [] ->
+        {:error, "Not Found"}
+    end
+  end
+
   @doc """
   Places an order on Binance Futures with the futures account.
 
