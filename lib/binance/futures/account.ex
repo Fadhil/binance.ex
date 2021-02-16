@@ -8,7 +8,7 @@ defmodule Binance.Futures.Account do
 
     case FuturesHTTPClient.get_futures("/fapi/v2/balance", %{}, secret_key, api_key) do
       {:ok, data} ->
-        account = Account.new(data)
+        account = Binance.Futures.Schemas.Account.new(data)
         {:ok, account}
 
       err ->
