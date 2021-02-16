@@ -1,4 +1,4 @@
-defmodule Binance.Futures.Order do
+defmodule Binance.Futures.Schemas.Order do
   defstruct [
     :client_order_id,
     :cum_qty,
@@ -12,18 +12,21 @@ defmodule Binance.Futures.Order do
     :side,
     :position_side,
     :status,
-    :stop_price,        # please ignore when order type is TRAILING_STOP_MARKET
-    :close_position,    # if Close-All
+    # please ignore when order type is TRAILING_STOP_MARKET
+    :stop_price,
+    # if Close-All
+    :close_position,
     :symbol,
     :time_in_force,
     :type,
     :orig_type,
-    :activate_price,    # activation price, only return with TRAILING_STOP_MARKET order
-    :price_rate,        # callback rate, only return with TRAILING_STOP_MARKET order
+    # activation price, only return with TRAILING_STOP_MARKET order
+    :activate_price,
+    # callback rate, only return with TRAILING_STOP_MARKET order
+    :price_rate,
     :update_time,
     :working_type,
     :price_protect
-
   ]
 
   use ExConstructor

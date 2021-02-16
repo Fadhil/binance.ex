@@ -1,4 +1,4 @@
-defmodule Binance.Futures.Asset do
+defmodule Binance.Futures.Schemas.Asset do
   defstruct [
     :account_alias,
     :asset,

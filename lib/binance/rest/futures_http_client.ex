@@ -41,6 +41,7 @@ defmodule Binance.Rest.FuturesHTTPClient do
             argument_string
           )
           |> Base.encode16()
+
         {:ok, "#{url}?#{argument_string}&signature=#{signature}", headers}
     end
   end

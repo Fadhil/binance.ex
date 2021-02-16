@@ -1,11 +1,33 @@
 defmodule Binance.Futures.Account do
-  defstruct [:assets]
+  alias Binance.Rest.FuturesHTTPClient
 
-  def new(assets) do
-    assets =
-      assets
-      |> Enum.map(&Binance.Futures.Asset.new(&1))
+  def get_account do
+    api_key = Application.get_env(:binance, :api_key)
+    secret_key = Application.get_env(:binance, :secret_key)
 
-    %__MODULE__{assets: assets}
+    case FuturesHTTPClient.get_futures("/fapi/v2/balance", %{}, secret_key, api_key) do
+      {:ok, data} ->
+        account = Binance.Futures.Schemas.Account.new(data)
+        {:ok, account}
+
+      err ->
+        err
+    end
+  end
+
+  def get_balance(symbol) do
+    {:ok, account} = get_account()
+
+    asset =
+      account.assets
+      |> Enum.filter(&(&1.asset == symbol))
+
+    case asset do
+      [asset] ->
+        {:ok, asset}
+
+      [] ->
+        {:error, "Not Found"}
+    end
   end
 end
