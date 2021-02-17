@@ -25,7 +25,6 @@ defmodule Binance.Futures.Trade do
 
     case FuturesHTTPClient.get_futures("/fapi/v1/positionSide/dual", %{}, secret_key, api_key) do
       {:ok, data} ->
-        require IEx; IEx.pry()
         {:ok, %{dual_side_position_mode: data["dualSidePosition"]}}
 
       err ->
