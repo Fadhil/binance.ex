@@ -67,6 +67,7 @@ defmodule Binance.Futures.Trade do
       symbol: symbol,
       price: price,
       quantity: quantity,
+      positionSide: Keyword.get(opts, :position_side, "BOTH"),
       timeInForce: Keyword.get(opts, :time_in_force, "GTC"),
       type: Keyword.get(opts, :type, "LIMIT")
     }
