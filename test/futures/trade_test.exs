@@ -59,4 +59,12 @@ defmodule Binance.Futures.TradeTest do
       end
     end
   end
+
+  describe ".get_all_open_orders/0" do
+    test "returns all open orders" do
+      use_cassette "get_all_open_orders" do
+        assert {:ok, [%Binance.Futures.Schemas.Order{} | _tail]} = Binance.Futures.get_all_open_orders()
+      end
+    end
+  end
 end

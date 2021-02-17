@@ -80,4 +80,22 @@ defmodule Binance.Futures.Trade do
         {:ok, Binance.Futures.Schemas.Order.new(data)}
     end
   end
+
+
+  def get_all_open_orders do
+    api_key = Application.get_env(:binance, :api_key)
+    secret_key = Application.get_env(:binance, :secret_key)
+
+    case FuturesHTTPClient.get_futures("/fapi/v1/openOrders", %{}, secret_key, api_key) do
+      {:ok, data} ->
+        orders =
+          data
+          |> Enum.map(&Binance.Futures.Schemas.Order.new(&1))
+
+        {:ok, orders}
+
+      err ->
+        err
+    end
+  end
 end

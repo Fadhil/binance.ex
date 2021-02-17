@@ -1,0 +1,46 @@
+[
+  {
+    "request": {
+      "body": "",
+      "headers": {
+        "X-MBX-APIKEY": "***"
+      },
+      "method": "get",
+      "options": [],
+      "request_body": "",
+      "url": "https://fapi.binance.com/fapi/v1/openOrders?recvWindow=5000&timestamp=1613573305612&signature=***"
+    },
+    "response": {
+      "binary": false,
+      "body": "[{\"orderId\":68628401,\"symbol\":\"AKROUSDT\",\"status\":\"NEW\",\"clientOrderId\":\"web_aTEbN4nQf8nKui223ote\",\"price\":\"0.02333\",\"avgPrice\":\"0.00000\",\"origQty\":\"100\",\"executedQty\":\"0\",\"cumQuote\":\"0\",\"timeInForce\":\"GTC\",\"type\":\"LIMIT\",\"reduceOnly\":false,\"closePosition\":false,\"side\":\"BUY\",\"positionSide\":\"LONG\",\"stopPrice\":\"0\",\"workingType\":\"CONTRACT_PRICE\",\"priceProtect\":false,\"origType\":\"LIMIT\",\"time\":1613573294175,\"updateTime\":1613573306567}]",
+      "headers": {
+        "Content-Type": "application/json",
+        "Content-Length": "434",
+        "Connection": "keep-alive",
+        "Date": "Wed, 17 Feb 2021 14:48:26 GMT",
+        "Server": "Tengine",
+        "Vary": "Accept-Encoding",
+        "X-MBX-USED-WEIGHT-1M": "40",
+        "x-response-time": "0ms",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
+        "Access-Control-Allow-Credentials": "true",
+        "Access-Control-Allow-Headers": "*,clienttype,Content-Type,lang,x-ui-request-trace,bnc-uuid",
+        "Content-Security-Policy": "default-src 'self'",
+        "cache-control": "no-cache, no-store, must-revalidate",
+        "expires": "0",
+        "pragma": "no-cache",
+        "strict-transport-security": "max-age=31536000; includeSubdomains",
+        "x-content-type-options": "nosniff",
+        "x-frame-options": "SAMEORIGIN",
+        "x-xss-protection": "1; mode=block",
+        "X-Cache": "Miss from cloudfront",
+        "Via": "1.1 406461fd8617bd4d59bb9898123ebbe8.cloudfront.net (CloudFront)",
+        "X-Amz-Cf-Pop": "SYD1-C1",
+        "X-Amz-Cf-Id": "484JMqnWIexO0IyfEMGYqpWtWQnACFOkUSaUWcbvST6HzfBDwn0iXA=="
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  }
+]
