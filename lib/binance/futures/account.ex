@@ -1,6 +1,6 @@
 defmodule Binance.Futures.Account do
   alias Binance.Rest.FuturesHTTPClient
-  alias Binance.Futures.Account
+  alias Binance.Futures.Schemas.Account
 
   def get_account do
     api_key = Application.get_env(:binance, :api_key)
@@ -8,7 +8,7 @@ defmodule Binance.Futures.Account do
 
     case FuturesHTTPClient.get_futures("/fapi/v2/balance", %{}, secret_key, api_key) do
       {:ok, data} ->
-        account = Binance.Futures.Schemas.Account.new(data)
+        account = Account.new(data)
         {:ok, account}
 
       err ->
