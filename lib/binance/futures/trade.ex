@@ -19,6 +19,21 @@ defmodule Binance.Futures.Trade do
     end
   end
 
+  def get_position_mode do
+    api_key = Application.get_env(:binance, :api_key)
+    secret_key = Application.get_env(:binance, :secret_key)
+
+    case FuturesHTTPClient.get_futures("/fapi/v1/positionSide/dual", %{}, secret_key, api_key) do
+      {:ok, data} ->
+        require IEx; IEx.pry()
+        {:ok, %{dual_side_position_mode: data["dualSidePosition"]}}
+
+      err ->
+        err
+    end
+
+  end
+
   defp non_zero_positions(%{"positionAmt" => amount}) do
     {amount_in_float, _} = Float.parse(amount)
     amount_in_float != 0.0

@@ -5,5 +5,6 @@ defmodule Binance.Futures do
   defdelegate get_account, to: Account
   defdelegate get_balance(symbol), to: Account
   defdelegate get_positions, to: Trade
+  defdelegate get_position_mode, to: Trade
   defdelegate place_order(side, symbol, price, quantity, opts \\ []), to: Trade
 end

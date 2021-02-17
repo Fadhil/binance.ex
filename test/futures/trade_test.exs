@@ -51,4 +51,12 @@ defmodule Binance.Futures.TradeTest do
       end
     end
   end
+
+  describe ".get_position_mode/0" do
+    test "returns current position mode (Hedge/One Way)" do
+      use_cassette "get_position_mode" do
+        assert {:ok, %{dual_side_position_mode: true}} == Binance.Futures.get_position_mode()
+      end
+    end
+  end
 end
