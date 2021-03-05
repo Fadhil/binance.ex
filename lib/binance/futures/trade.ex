@@ -98,4 +98,23 @@ defmodule Binance.Futures.Trade do
         err
     end
   end
+
+  @spec  get_order_book(symbol :: String.t(), opts :: list()) :: {:ok, Binance.Futures.Schemas.OrderBook.t()} | {:error, term()}
+  def get_order_book(symbol, opts \\ []) do
+    api_key = Application.get_env(:binance, :api_key)
+    secret_key = Application.get_env(:binance, :secret_key)
+
+    limit = Keyword.get(opts, :limit, 50)
+
+    case FuturesHTTPClient.get_futures("/fapi/v1/depth", %{symbol: symbol, limit: limit}, secret_key, api_key) do
+      {:ok, data} ->
+        order_book =
+          Binance.Futures.Schemas.OrderBook.new(data)
+
+        {:ok, order_book}
+
+      err ->
+        err
+    end
+  end
 end

@@ -67,4 +67,12 @@ defmodule Binance.Futures.TradeTest do
       end
     end
   end
+
+  describe ".get_order_book/1" do
+    test "returns order book for given symbol" do
+      use_cassette "get_order_book" do
+        assert {:ok, %Binance.Futures.Schemas.OrderBook{}} = Binance.Futures.get_order_book("AKROUSDT")
+      end
+    end
+  end
 end
